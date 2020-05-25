@@ -9,17 +9,41 @@ html, body {
     overflow: hidden;
 }
 
+#login-page {
+    text-align: center;
+}
+
 .nickname  {
-    color:#347deb;
-    margin-right:20px;
+    color:blue;margin-right:20px;
 }
 .hidden {
     display: none;
 }
 
 .user-container {
+    float: right;
     margin-right:5px;
 }
+
+#login-container {
+    background: #f4f6f6 ;
+    border: 2px solid #ccc;
+    width: 100%;
+    max-width: 500px;
+    display: inline-block;
+    margin-top: 42px;
+    vertical-align: middle;
+    position: relative;
+    padding: 35px 55px 35px;
+    min-height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-top: -160px;
+}
+
 
 #chat-container {
     position: relative;
@@ -33,12 +57,9 @@ html, body {
 #chat-container {
     border: 2px solid #d5dbdb;
     background-color:  #ffffff ;
-    max-width: 700px;
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
-
-    padding-top: 10px;
-    padding-bottom: 10px;
 
     margin-top: 30px;
     height: calc(100% - 60px);
@@ -52,7 +73,7 @@ html, body {
     background-color: #fff;
     margin: 0;
     overflow: auto;
-    #overflow-y: scroll;
+    overflow-y: scroll;
     padding: 0 20px 0px 20px;
     height: calc(100% - 150px);
 }
@@ -66,6 +87,11 @@ html, body {
     padding: 10px 20px;
     margin: 0;
     border-bottom: 1px solid #f4f4f4;
+}
+
+#chat-container ul li span {
+    margin: 0;
+    word-wrap: break-word;
 }
 
 #chat-container ul li p {
@@ -88,12 +114,9 @@ html, body {
     position: relative;
 }
 
-.fixed-bottom {
-      position: fixed;
-      left: 40%;
-      bottom: 0;
-      width: 100%;
-      text-align: center;
+#messageForm .input-message  {
+    float: left;
+    width: calc(100% - 85px);
 }
 
 .connecting {
